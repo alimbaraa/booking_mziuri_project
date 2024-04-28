@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Booking.ge</title>
+    <link rel="stylesheet" type="text/css" href="./../style.css">
+</head>
+<body>
+
+    <div id="popup" class="popup">
+        <h3>Book a room!</h3>
+        <select name="rooms" id="room-select">
+            <option value=""> select room </option>
+            <option value="0"> Room N1 </option>
+            <option value="1"> Room N2 </option>
+        </select>
+        <button type="submit" onclick="bookRoom()" class="submitButton">Book Room</button>
+        <button type="submit" onclick="closePopup()" class="closeButton">Close Window</button>
+    </div>
+
+
+    <main class="table">
+        <section class="table__header">
+            <h1>All Hotels in the country!</h1>
+        </section>
+        <section class="table__body">
+            <table>
+                <thead>
+                    <tr>
+                        <th> id </th>
+                        <th> Hotel </th>
+                        <th> Name </th>
+                        <th> Location </th>
+                        <th> Stars </th>
+                        <th> Price </th>
+                        <th> Booking </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> 0 </td>
+                        <td> <img src="img/Wereteli.jpg" alt=""></td>
+                        <td> TbilisiHotel </td>
+                        <td> Tbilisi </td>
+                        <td> ★★★★ </td>
+                        <td> $130.00 </td>
+                        <td> <button id="0" class="book-room" onclick="openPopup()">Book room</button> </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="./../script.js"></script>
+</body>
+</html>
